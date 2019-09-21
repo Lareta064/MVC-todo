@@ -1,0 +1,95 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background: url('https://i2.wp.com/pinkbowstwinkletoes.com/wp-content/uploads/2017/03/img_0917.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+body:after{
+    content:'' ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .65);
+}
+*{box-sizing: border-box}
+.done{
+    text-decoration: line-through;
+    color: #999;
+    font-style: italic;
+}
+#app{
+    width: 700px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 0 24px rgba(0,0,0, .25)
+}
+ol {
+    padding-left: 3em;
+}
+li{
+    position: relative; 
+    margin-bottom: 15px;  
+}
+li:first-child{margin-top: 50px;}
+li:last-child{margin-bottom: 50px;}
+
+input[type='checkbox'] {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+}
+input[type='text'] {
+    height: 39px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid hsl(0, 3%, 64%);
+    outline: none;
+
+}
+input[type='text']:focus {
+    border-color: #3b3bfa;
+    padding-left: 14px;
+}
+button{
+    height: 34px;
+    background-color: #fff;
+    border: 2px solid #999;
+    color: #1b1b1b;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+
+}
+button:hover{
+background-color: #dedede;
+}
+#addItem{
+    border-color: #e9b015;
+    color: hsl(46, 78%, 27%);  
+}
+#makeDone{
+    border-color: green;
+    color: green;
+}
+#makeNotDone{
+    border-color: blue;
+    color: blue;
+}
+#remove{
+    border-color: red;
+    color: red;
+}
